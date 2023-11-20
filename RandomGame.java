@@ -1,9 +1,9 @@
 
-import java.util.Random;
-import java.util.Scanner;
+import java.util.Random; // importing package for random number
+import java.util.Scanner; // package for inputing
 
 public class RandomGame {
-    
+    //  creating funcion for welcome using thread
     public static void displayWelcome() {
        
         for (int i = 1; i <= 7; i++) {
@@ -26,9 +26,9 @@ public class RandomGame {
     }
     public static void main(String[] args) {
         
-        Random random = new Random();
-        int number = random.nextInt(100) + 1;
-        int guesses = 0;
+        Random random = new Random(); // create object for random number
+        int number = random.nextInt(100) + 1; // random number from 1 to 100
+        int guesses = 0; 
         displayWelcome();
         System.out.println("\n\t\t\t\t\t\t\t\tYOU HAVE 10 GUESSES TO GUESS THE CORRECT NUMBER\n");
 
